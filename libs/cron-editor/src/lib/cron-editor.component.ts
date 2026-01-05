@@ -109,6 +109,30 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
     return this.options.cronFlavor === 'quartz' ? '?' : '*';
   }
 
+  get dailyEveryDaysGroup(): UntypedFormGroup {
+    return this.dailyForm.get('everyDays') as UntypedFormGroup;
+  }
+
+  get dailyEveryWeekDayGroup(): UntypedFormGroup {
+    return this.dailyForm.get('everyWeekDay') as UntypedFormGroup;
+  }
+
+  get monthlySpecificDayGroup(): UntypedFormGroup {
+    return this.monthlyForm.get('specificDay') as UntypedFormGroup;
+  }
+
+  get monthlySpecificWeekDayGroup(): UntypedFormGroup {
+    return this.monthlyForm.get('specificWeekDay') as UntypedFormGroup;
+  }
+
+  get yearlySpecificMonthDayGroup(): UntypedFormGroup {
+    return this.yearlyForm.get('specificMonthDay') as UntypedFormGroup;
+  }
+
+  get yearlySpecificMonthWeekGroup(): UntypedFormGroup {
+    return this.yearlyForm.get('specificMonthWeek') as UntypedFormGroup;
+  }
+
   constructor(private fb: UntypedFormBuilder, private translateService: TranslateService) {}
 
   public ngOnInit(): void {
@@ -217,8 +241,9 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
   }
 
   private computeHourlyCron(state: any) {
-    this.cron =
-      `0 0 0/${state.hours} * * ${this.weekDayDefaultChar} ${this.yearDefaultChar}`.trim();
+    this.cron = `${this.isCronFlavorQuartz ? state.seconds : ''} ${state.minutes} 0/${
+      state.hours
+    } * * ${this.weekDayDefaultChar} ${this.yearDefaultChar}`.trim();
   }
 
   private computeDailyCron(state: any) {
@@ -640,6 +665,7 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
       monthWeeks: ['#1', '#2', '#3', '#4', '#5', 'L'],
       days: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
       minutes: this.getRange(1, 59),
+      fullMinutes: this.getRange(0, 59),
       seconds: this.getRange(1, 59),
       hours: this.getRange(1, 23),
       monthDays: this.getRange(1, 31),
