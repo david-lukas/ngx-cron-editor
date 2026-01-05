@@ -1,14 +1,19 @@
 {
-  "name": "@cardiosmircem/ngx-cron-editor",
+  "name": "@david-lukas/ngx-cron-editor",
   "description": "A cron expression generator with translations",
-  "version": "1.0.13",
+  "version": "18.0.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cardiosMircem/ngx-cron-editor"
+    "url": "git://github.com/david-lukas/ngx-cron-editor"
   },
   "author": {
     "name": "Mirco Seccardi"
   },
+  "contributors": [
+    {
+      "name": "David Lukas"
+    }
+  ],
   "keywords": [
     "angular",
     "cron",
@@ -22,9 +27,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cardiosMircem/ngx-cron-editor/issues"
+    "url": "https://github.com/david-lukas/ngx-cron-editor/issues"
   },
-  "homepage": "https://github.com/cardiosMircem/ngx-cron-editor",
+  "homepage": "https://github.com/david-lukas/ngx-cron-editor",
   "peerDependencies": {
     "@angular/core": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
     "@angular/animations": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
@@ -35,7 +40,8 @@
     "@angular/router": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
     "@angular/material": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
     "@angular/cdk": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
-    "@angular/compiler": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    "@angular/compiler": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "@ngx-translate/core": "^14.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
