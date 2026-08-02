@@ -1,7 +1,7 @@
 {
   "name": "@david-lukas/ngx-cron-editor",
   "description": "A cron expression generator with translations",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/david-lukas/ngx-cron-editor"
@@ -31,16 +31,16 @@
   },
   "homepage": "https://github.com/david-lukas/ngx-cron-editor",
   "peerDependencies": {
-    "@angular/core": "^19.0.0",
-    "@angular/animations": "^19.0.0",
-    "@angular/common": "^19.0.0",
-    "@angular/forms": "^19.0.0",
-    "@angular/platform-browser": "^19.0.0",
-    "@angular/platform-browser-dynamic": "^19.0.0",
-    "@angular/router": "^19.0.0",
-    "@angular/material": "^19.0.0",
-    "@angular/cdk": "^19.0.0",
-    "@angular/compiler": "^19.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/animations": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-browser-dynamic": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@angular/material": "^20.0.0",
+    "@angular/cdk": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
     "@ngx-translate/core": "^14.0.0"
   },
   "dependencies": {
