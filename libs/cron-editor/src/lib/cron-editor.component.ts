@@ -12,7 +12,7 @@ import { CronOptions } from './cron-options';
 import { MonthWeeks, Tabs, Months } from './enums';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { Subject, takeUntil } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 /**
  * build the cron from this form.
@@ -77,7 +77,7 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
   /** it varies due to the option JSON */
   tabList: string[] = [];
 
-  unsub$ = new Subject<void>();
+  private langChangeSubscription?: Subscription;
 
   /** get the value from the input value and use it around the component */
   get cron(): string {
@@ -201,11 +201,11 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
     }
 
     // translate observable that emits on language changed
-    this.translateService.onLangChange
-      .pipe(takeUntil(this.unsub$))
-      .subscribe((translate: { lang: string; translations: any }) => {
+    this.langChangeSubscription = this.translateService.onLangChange.subscribe(
+      (translate: { lang: string; translations: any }) => {
         this.currentLanguage = translate.lang;
-      });
+      }
+    );
   }
 
   /**
@@ -754,6 +754,6 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
   }
 
   ngOnDestroy(): void {
-    this.unsub$.next(null);
+    this.langChangeSubscription?.unsubscribe();
   }
 }
