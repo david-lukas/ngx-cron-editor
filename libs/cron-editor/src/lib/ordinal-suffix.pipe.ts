@@ -6,7 +6,8 @@ import { TranslateService } from '@ngx-translate/core';
  */
 
 @Pipe({
-  name: 'ordinalSuffix'
+  name: 'ordinalSuffix',
+  standalone: false
 })
 export class OrdinalSuffixPipe implements PipeTransform {
   constructor(private translateService: TranslateService) {}

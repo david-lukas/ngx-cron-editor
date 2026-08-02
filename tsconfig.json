@@ -19,6 +19,9 @@
       "dom"
     ],
     "paths": {
+      "@david-lukas/ngx-cron-editor": [
+        "dist/cron-editor"
+      ],
       "cron-editor": [
         "dist/cron-editor/cron-editor",
         "dist/cron-editor"

@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Pipe({
-  name: 'monthDayDisplay'
+  name: 'monthDayDisplay',
+  standalone: false
 })
 export class MonthDayDisplayPipe implements PipeTransform {
   constructor(private translateService: TranslateService) {}

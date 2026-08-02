@@ -17,7 +17,8 @@ function* range(start: number, end: number) {
 @Component({
   selector: 'cron-time-picker',
   templateUrl: './cron-time-picker.template.html',
-  providers: []
+  providers: [],
+  standalone: false
 })
 export class TimePickerComponent {
   @Input() public disabled;
