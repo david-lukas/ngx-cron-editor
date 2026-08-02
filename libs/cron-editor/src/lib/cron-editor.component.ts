@@ -34,7 +34,8 @@ export const CRON_VALUE_ACCESSOR: any = {
   selector: 'app-cron-editor',
   templateUrl: './cron-editor.template.html',
   styleUrls: ['./cron-editor.component.css'],
-  providers: [CRON_VALUE_ACCESSOR]
+  providers: [CRON_VALUE_ACCESSOR],
+  standalone: false
 })
 export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDestroy {
   @Input() public options: CronOptions;
