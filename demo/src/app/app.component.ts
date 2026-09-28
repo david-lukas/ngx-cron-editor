@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     this.translate.addLangs(this.availableLanguages);
     this.translate.use('en');
     this.cronFlavorFC = new UntypedFormControl(this.cronOptions.cronFlavor);
-    this.languageFC = new UntypedFormControl(this.translate.currentLang);
+    this.languageFC = new UntypedFormControl(this.translate.getCurrentLang());
   }
 
   seeCron(ev: string): void {

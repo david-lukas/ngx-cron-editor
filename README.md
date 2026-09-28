@@ -19,6 +19,27 @@ Npm package can be found 👉 👉 👉 [here](https://www.npmjs.com/package/@da
    $ npm i @david-lukas/ngx-cron-editor
    ```
 
+   Configure ngx-translate 18 in the root application. For an NgModule-based application:
+
+   ```ts
+   import { provideHttpClient } from '@angular/common/http';
+   import { provideTranslateService } from '@ngx-translate/core';
+   import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+
+   @NgModule({
+     providers: [
+       provideHttpClient(),
+       provideTranslateService({
+         loader: provideTranslateHttpLoader({
+           prefix: 'assets/i18n/',
+           suffix: '.json'
+         })
+       })
+     ]
+   })
+   export class AppModule {}
+   ```
+
 2. import the module in your own module
 
    ```ts
