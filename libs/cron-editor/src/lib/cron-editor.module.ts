@@ -7,7 +7,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TranslateModule } from '@ngx-translate/core';
+import { provideChildTranslateService, TranslatePipe } from '@ngx-translate/core';
 import { CronEditorComponent } from './cron-editor.component';
 import { TimePickerComponent } from './cron-time-picker.component';
 import { MonthDayDisplayPipe } from './month-day-display.pipe';
@@ -25,8 +25,9 @@ import { OrdinalSuffixPipe } from './ordinal-suffix.pipe';
     MatInputModule,
     MatRadioModule,
     MatCheckboxModule,
-    TranslateModule.forChild()
+    TranslatePipe
   ],
+  providers: [...provideChildTranslateService()],
   declarations: [TimePickerComponent, CronEditorComponent, MonthDayDisplayPipe, OrdinalSuffixPipe],
   exports: [TimePickerComponent, CronEditorComponent]
 })

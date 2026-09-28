@@ -137,7 +137,7 @@ export class CronEditorComponent implements OnInit, ControlValueAccessor, OnDest
   constructor(private fb: UntypedFormBuilder, private translateService: TranslateService) {}
 
   public ngOnInit(): void {
-    this.currentLanguage = this.translateService.currentLang;
+    this.currentLanguage = this.translateService.getCurrentLang() ?? 'en';
 
     // start with initial values of the whole form
     this.state = this.getInitialState();
