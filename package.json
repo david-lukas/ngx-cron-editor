@@ -1,6 +1,6 @@
 {
   "name": "ngx-cron-editor",
-  "version": "20.0.0",
+  "version": "21.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,21 +8,21 @@
     "build:lib": "ng build cron-editor",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pack-install": "rm -rf dist && npm run build:lib && cd dist/cron-editor && npm pack && cd ../../ && npm install dist/cron-editor/david-lukas-ngx-cron-editor-20.0.0.tgz && rm -rf .angular && ng serve -o",
+    "pack-install": "rm -rf dist && npm run build:lib && cd dist/cron-editor && npm pack && cd ../../ && npm install dist/cron-editor/david-lukas-ngx-cron-editor-21.0.0.tgz && rm -rf .angular && ng serve -o",
     "pub": "npm run build:lib && cd dist/cron-editor && npm publish --access public",
     "update-docs": "rm -rf docs/* && ng build && mv dist/apps/demo/* docs/"
   },
   "dependencies": {
-    "@angular/animations": "^20.3.27",
-    "@angular/cdk": "^20.2.14",
-    "@angular/common": "^20.3.27",
-    "@angular/compiler": "^20.3.27",
-    "@angular/core": "^20.3.27",
-    "@angular/forms": "^20.3.27",
-    "@angular/material": "^20.2.14",
-    "@angular/platform-browser": "^20.3.27",
-    "@angular/platform-browser-dynamic": "^20.3.27",
-    "@angular/router": "^20.3.27",
+    "@angular/animations": "^21.2.24",
+    "@angular/cdk": "^21.2.14",
+    "@angular/common": "^21.2.24",
+    "@angular/compiler": "^21.2.24",
+    "@angular/core": "^21.2.24",
+    "@angular/forms": "^21.2.24",
+    "@angular/material": "^21.2.14",
+    "@angular/platform-browser": "^21.2.24",
+    "@angular/platform-browser-dynamic": "^21.2.24",
+    "@angular/router": "^21.2.24",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "rxjs": "~7.4.0",
@@ -30,11 +30,11 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^20.3.32",
-    "@angular-devkit/core": "^20.3.32",
-    "@angular/cli": "^20.3.32",
-    "@angular/compiler-cli": "^20.3.27",
-    "@angular/language-service": "^20.3.27",
+    "@angular-devkit/build-angular": "^21.2.24",
+    "@angular-devkit/core": "^21.2.24",
+    "@angular/cli": "^21.2.24",
+    "@angular/compiler-cli": "^21.2.24",
+    "@angular/language-service": "^21.2.24",
     "@types/jasmine": "~3.7.7",
     "@types/jasminewd2": "^2.0.9",
     "@types/node": "^20.19.0",
@@ -49,12 +49,12 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.6.0",
-    "ng-packagr": "^20.3.2",
+    "ng-packagr": "^21.2.7",
     "protractor": "~7.0.0",
     "scss-bundle": "^3.1.2",
     "standard-version": "^9.3.0",
     "ts-node": "~10.0.0",
     "tslint": "~6.1.3",
-    "typescript": "~5.8.3"
+    "typescript": "~5.9.3"
   }
 }
