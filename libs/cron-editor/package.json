@@ -1,7 +1,7 @@
 {
   "name": "@david-lukas/ngx-cron-editor",
   "description": "A cron expression generator with translations",
-  "version": "20.0.0",
+  "version": "21.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/david-lukas/ngx-cron-editor"
@@ -10,6 +10,27 @@
     "name": "Mirco Seccardi"
   },
   "contributors": [
+    {
+      "name": "Vincent Pizzo"
+    },
+    {
+      "name": "Claudiu Constantin"
+    },
+    {
+      "name": "Eduardo Sarmiento"
+    },
+    {
+      "name": "Håvard D. Johansen"
+    },
+    {
+      "name": "Aleksey Yermolenko"
+    },
+    {
+      "name": "Ruslan Lekhman"
+    },
+    {
+      "name": "Benjamin Deininger"
+    },
     {
       "name": "David Lukas"
     }
@@ -31,16 +52,16 @@
   },
   "homepage": "https://github.com/david-lukas/ngx-cron-editor",
   "peerDependencies": {
-    "@angular/core": "^20.0.0",
-    "@angular/animations": "^20.0.0",
-    "@angular/common": "^20.0.0",
-    "@angular/forms": "^20.0.0",
-    "@angular/platform-browser": "^20.0.0",
-    "@angular/platform-browser-dynamic": "^20.0.0",
-    "@angular/router": "^20.0.0",
-    "@angular/material": "^20.0.0",
-    "@angular/cdk": "^20.0.0",
-    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/animations": "^21.0.0",
+    "@angular/common": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/platform-browser-dynamic": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "@angular/material": "^21.0.0",
+    "@angular/cdk": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
     "@ngx-translate/core": "^14.0.0"
   },
   "dependencies": {
